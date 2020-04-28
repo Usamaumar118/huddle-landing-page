@@ -22,6 +22,33 @@ html{
     font-size: 62.5%;
     font-family: 'open sans', sans-serif;
     box-sizing: border-box;
+
+    @media only screen and (max-width: 1578px){
+        font-size:  60% ;
+    }
+    @media only screen and (max-width: 1412px){
+        font-size:  58%;
+    }
+
+    @media only screen and (max-width: 1365px){
+        font-size:  55%;
+    }
+
+    @media only screen and (max-width: 1295px){
+        font-size:  52%;
+    }
+
+    @media only screen and (max-width: 1223px){
+        font-size:  50%;
+    }
+
+    @media only screen and (max-width: 950px){
+        font-size:  45%;
+    }
+
+    @media only screen and (max-width: 680px){
+        font-size:  50%;
+    }
 }
 
 
@@ -78,10 +105,22 @@ p{
     }
     &--large{
         padding: 2rem 10rem;
+
+        @media only screen and (max-width: 550px){
+            padding: 2rem 5rem;
+        }
     }
 
 }
 
+.header__logo,
+.footer__logo{
+   width: 70%;
+
+   @media only screen and (max-width: 550px){
+    width: 50%;
+}
+}
 
 
 .top-wrapper{
@@ -95,6 +134,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .hero{
@@ -102,8 +142,21 @@ p{
 
     display: grid;
     grid-template-columns: 40% 1fr;
+
+    @media only screen and (max-width: 1176px){
+        grid-template-columns: 50% 1fr;
+    }
+
+    @media only screen and (max-width: 850px){
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
     gap: 5rem;
     align-items: center;
+
+
 
     &__text{
 
@@ -112,6 +165,16 @@ p{
             font-size: 6rem;
             line-height: 1.3;
             margin-bottom: 3rem;
+
+            @media only screen and (max-width: 1578px){
+                font-size:  5.6rem;
+            }
+
+            @media only screen and (max-width: 510px){
+                font-size:  4.2rem;
+            }
+            
+
         }
 
         &__para{
@@ -119,6 +182,8 @@ p{
             margin-bottom: 2rem;
         }
     }
+
+
 }
 
 
@@ -137,6 +202,14 @@ p{
     display: grid;
     grid-template-columns: 40% 40%;
 
+    @media only screen and (max-width: 680px){
+        grid-template-columns: 1fr;
+        padding: 5rem;
+        gap: 4rem;
+        text-align: center;
+    }
+
+
     align-items: center;
     justify-content: space-between;
 
@@ -147,6 +220,10 @@ p{
 
 
     &__text{
+        @media only screen and (max-width: 680px){
+            grid-row: 2/3;
+            
+        }
 
         &__heading{
             font-size: 3.8rem;
@@ -170,6 +247,7 @@ p{
 
 
 .cta{
+    width: 90%;
     max-width: max-content;
     margin: 0 auto;
     padding: 5rem 10rem;
@@ -181,10 +259,22 @@ p{
     position: relative;
     z-index: 1;
 
+    
+    @media only screen and (max-width: 580px){
+        padding: 5rem  2rem;
+    }
+
 
     &__heading{
         font-size: 3rem;
+        @media only screen and (max-width: 550px){
+            font-size: 2.4rem;
+        }
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: 550px){
+            font-size: 2.2rem;
+        }
     }
 }
 
@@ -192,11 +282,21 @@ p{
     padding: 15rem 5% 5rem;
     background-color: var(--c-very-dark-cyan);
 
+
     &__content{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         margin-top: 4rem;
         gap: 8rem;
+        @media only screen and (max-width: 680px){
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            font-size: 1.6rem;
+        }
+    
+
+
+
     }
 
     &__contact-info{
@@ -220,6 +320,10 @@ p{
             &__para{
                 font-size: 1.4rem;
                 width: 80%;
+
+                @media only screen and (max-width: 680px){
+                    font-size: 1.6rem;
+                }
             }
     }
 
@@ -231,12 +335,20 @@ p{
             color: #FFF;
             display: block;
             padding-bottom: 1.5rem;
+
+            @media only screen and (max-width: 680px){
+                font-size: 1.6rem;
+            }
         }
 
     }
 
     &__social{
         display: flex;
+
+        @media only screen and (max-width: 680px){
+            justify-content: center;
+        }
         &__item{
             border: 2px solid #fff;
             display: block;
@@ -264,5 +376,11 @@ p{
         color: #fff;
         text-align: right;
         font-size: 1.2rem;
+
+        @media only screen and (max-width: 680px){
+            text-align: center;
+            margin-top: 2rem;
+        }
+    
     }
 }
