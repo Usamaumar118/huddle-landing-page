@@ -283,6 +283,7 @@ p {
 @media only screen and (max-width: 580px) {
   .cta {
     padding: 5rem  2rem;
+    width: 90%;
   }
 }
 
